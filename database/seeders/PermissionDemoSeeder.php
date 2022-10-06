@@ -29,6 +29,13 @@ class PermissionDemoSeeder extends Seeder
         $role2->givePermissionTo('create artikel');
         $role2->givePermissionTo('read tag');
 
+        $role3 = Role::create(['name' => 'PilarMedia']);
+        $role3->givePermissionTo('create artikel');
+        $role3->givePermissionTo('read tag');
+
+
+
+
         $user = \App\Models\User::factory()->create([
             'name' => 'Administrator',
             'email' => 'paw@gmail.com',
